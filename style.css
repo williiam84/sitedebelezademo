@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #fff; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+:root {
+  --rosa-claro: #FFB5C0;
+  --rosa-choque: #FF69B4;
+  --rosa-fundo: #FFF0F5;
+  --verde-whats: #25D366;
+  --texto: #333;
+  --rosa-escuro: #FF69B4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+  z-index: 1000;
+}
+header h2 {
+    color: var(--rosa-escuro);
+}
+header nav {
+    display: flex;
+    gap: 10px;
+}
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+header nav a:hover {
+    border-bottom: 2px solid #d32f81;
+}
+main {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--rosa-claro);
+}
+main p {
+    width: 450px;
+}
+main button {
+    width: 300px;
+    height: 40px;
+    background-color: #d32f81;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+main button:hover {
+  background-color: white;
+  border: 3px solid #d32f81;
+  color: #d32f81;
+}
+#servicos {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#servicos > div {
+  background-color: #FFB5C0;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+#servicos h3 {
+  margin: 16px 0 12px;
+  font-size: 1.2rem;
+  color: #3a0f1c;
+}
+
+#servicos p {
+  font-size: 0.95rem;
+  color: #4a1f2a;
+  line-height: 1.5;
+}
+
+#servicos .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#depoimentos {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.depoimento {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.depoimento p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.depoimento span {
+  font-weight: bold;
+  color: #000;
+}
+#agendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#agendamento p{
+  color: #555;
+  display: flex;
+  gap: 5px;
+}
+#agendamento button {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #25D366
+;
+}
+.phone {
+  display: flex;
+  gap: 5px;
+}
+.horario {
+  display: flex;
+  gap: 5px;
+}
+#agendamento button:hover{
+  background-color: white;
+  border: 2px solid #25D366;
+  color: #25D366;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+}
+footer .redes-sociais {
+  display: flex;
+  gap: 20px;
+}
+.redes-sociais div {
+  color: white;
+  background-color: #d32f81;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.menu{
+  display: none;
+}
+.menu-lateral {
+  display: none;
+}
+@media (max-width: 900px) {
+  #servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu {
+    display: flex;
+    font-size: 20pt;
+    cursor: pointer;
+  }
+  .menu-lateral {
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 15%;
+    left: 70%;
+    background-color: #d32f81;
+    z-index: 999999;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+  }
+  .menu-lateral a{
+    color: white;
+    text-decoration: none;
+  }
+  .menu-lateral a:hover{
+    border-bottom: 2px solid white;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #servicos {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    display: flex;
+    font-size: 20pt;
+    cursor: pointer;
+  }
+}
