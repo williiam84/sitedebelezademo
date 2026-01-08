@@ -3,7 +3,11 @@ const btnwhats = document.getElementById("btnwhats")
 menu.addEventListener("click", ()=>{
     const menu_lateral = document.getElementById("menulateral")
     const links = document.querySelectorAll("a");
+    const secao = document.querySelectorAll("#secao")
 
+    secao.addEventListener("click", ()=>{
+        menu_lateral.style.display = "none"
+    })
 links.forEach(link => {
   link.addEventListener("click", () => {
     menu_lateral.style.display = "none";
