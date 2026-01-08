@@ -267,3 +267,102 @@ footer .redes-sociais {
     cursor: pointer;
   }
 }
+@media (max-width: 900px) {
+
+  header {
+    padding: 0 20px;
+    height: 80px;
+  }
+
+  main {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  main p {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #servicos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #d32f81;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    z-index: 9999;
+  }
+
+  .menu-lateral a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+
+  header {
+    height: 70px;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    min-height: auto;
+    padding: 60px 16px;
+  }
+
+  main button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #servicos {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #agendamento p {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer {
+    padding: 30px 16px;
+    text-align: center;
+  }
+
+  .menu-lateral {
+    width: 70%;
+  }
+}
