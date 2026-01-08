@@ -363,6 +363,11 @@ footer .redes-sociais {
   }
 
   .menu-lateral {
-    width: 70%;
+    width: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
